@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>Churrascometro</title>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="fecharModal()">&times;</span>
+        <h2>Bem-Vindo ao Churrascometro!</h2>
+        <p>
+          Seja bem-vindo ao Churrascometro, a ferramenta perfeita para tornar o seu churrasco ainda mais incrível! Estamos aqui para te ajudar a calcular a quantidade ideal de carne, cerveja e outras bebidas para o seu evento.
+        </p>
+        <h3>Como Funciona:</h3>
+        <p>
+          1. O calculo: Basta você nos informar quantos adultos vão estar presentes, quantas pessoas bebem bebidas alcoólicas e quantas crianças vão estar no seu churrasco.
+        </p>
+        <p>
+          É sempre bom ter uma variedade de bebidas disponíveis para atender a diferentes preferências.
+        </p>
+        <h3>Dicas Extras:</h3>
+        <p>
+          - Lembre-se, essas são apenas sugestões e podem variar dependendo dos apetites dos seus convidados. O importante é garantir que todos se divirtam!
+        </p>
+        <button class="ok-button" onclick="fecharModal()">Ok, entendi</button>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div class="text-content">
+          <h1>
+            Encontre a medida certa para o seu churrasco!
+          </h1>
+          <img src="../assets/img.svg" alt="" />
+        </div>
+        <div class="box-calculo">
+          <img src="../assets/logochurrs.jpg" alt="" />
+          <div class="form">
+            <div class="input-block">
+              <label for="adultos">Quantidade de adultos</label>
+              <input
+                type="number"
+                name="adultos"
+                id="adultos"
+                placeholder="Adultos"
+              />
+            </div>
+            <div class="input-block">
+              <label for="bebeAlcool">Pessoas que bebem bebida alcoólica</label>
+              <input type="number" name="bebeAlcool" id="bebeAlcool" placeholder="Pessoas que bebem" />
+          </div>
+          
+            <div class="input-block">
+              <label for="criancas">Quantidade de crianças</label>
+              <input
+                type="number"
+                name="criancas"
+                id="criancas"
+                placeholder="Crianças"
+              />
+            </div>
+            <div class="input-block">
+              <label for="duracao">Duração do churrasco (horas)</label>
+              <input
+                type="number"
+                name="duracao"
+                id="duracao"
+                placeholder="Duração (h)"
+              />
+            </div>
+            <div class="input-block">
+              <button onclick="calcular()">Calcular</button>
+            </div>
+          </div>
+
+          <div id="resultado"></div>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
